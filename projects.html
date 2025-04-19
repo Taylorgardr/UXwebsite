@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Accessible Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Responsive iframe wrapper */
+    .iframe-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      margin-top: 24px;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Full-height document wrapper for Google Doc */
+    .doc-container {
+      margin-top: 48px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .doc-container iframe {
+      width: 100%;
+      height: 1000px;
+      border: none;
+    }
+
+    .project {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .project h3 {
+      font-size: 1.5rem;
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projects</h1>
+    <nav aria-label="Main Navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Projects / Work Samples</h2>
+      <div class="project">
+        
+        <h3>🎥 Interactive Slide Case Study</h3>
+        <p>The SchedulePro app project is designed tocreate an app prototype made for College students to track their course, clubs and any other responsibilties they have. My role was to interview college students and find their concerns using calendar and scheduling apps that already exist, and create a prototype that best fills their needs for managing their studies. 
+        </p>
+        <div class="iframe-container">
+          <iframe 
+            src="https://docs.google.com/presentation/d/e/2PACX-1vS17jBuxYUmUDQaDJU8L0uthaHGXgSGGPbNCxsL3XSG3l5Um54FUHuxHu2DAFMwXWU5Rcux13FmZQv-/pubembed?start=true&loop=true&delayms=3000" 
+            allowfullscreen 
+            mozallowfullscreen 
+            webkitallowfullscreen>
+          </iframe>
+        </div>
+
+        <h3>📄 Written Case Study Document</h3>
+        <p>This detailed document highlights the UX design process and decisions. You can scroll through the entire case study below:</p>
+        <div class="doc-container">
+          <iframe 
+            src="https://docs.google.com/document/d/e/2PACX-1vTjvnfyRY1QzlNlBw1ZnWXqZmLCl8es6r1pl6HyPOAaeHbpRBq0f_8pwxIM3cJ78JChF8S8KJkXuxkl/pub?embedded=true">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Accessible Portfolio</p>
+  </footer>
+</body>
+</html>
